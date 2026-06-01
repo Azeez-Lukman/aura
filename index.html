@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Aura website</title>
+  </head>
+  <body class="font-[Inter] bg-[#F8F7F5]">
+    <header class="bg-white text-black relative z-50">
+      <div class="max-w-7xl mx-auto px-8 py-5">
+        <div class="flex justify-between items-center gap-5">
+          <h2 class="font-[Cormorant Garamond] font-normal text-2xl">AURA</h2>
+          <nav class="">
+            <ul class="lg:flex hidden items-center gap-5 text-lg">
+              <li
+                class="hover:text-[#8b4db586] transition duration-300 ease-in-out"
+              >
+                <a href="#Home">Home</a>
+              </li>
+              <li
+                class="hover:text-[#8b4db586] transition duration-300 ease-in-out"
+              >
+                <a href="#">Amenities</a>
+              </li>
+              <li
+                class="hover:text-[#8b4db586] transition duration-300 ease-in-out"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                class="hover:text-[#8b4db586] transition duration-300 ease-in-out"
+              >
+                <a href="#">Galllery</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- nav button -->
+          <div class="lg:flex hidden">
+            <button class="bg-[#AA77CC86] px-5 py-2 rounded-xl font-semibold">
+              Book Now
+            </button>
+          </div>
+          <!-- Harmburger -->
+          <div class="lg:hidden burger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M3 6h18M3 12h18M3 18h18"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- drop down -->
+      <div
+        class="drop-down hide lg:hidden bg-black/80 h-screen w-full text-white py-[50px] text-lg"
+      >
+        <div
+          class="flex flex-col justify-center items-center gap-6 transition-all duration-800 ease-in-out"
+        >
+          <nav class="">
+            <ul class="flex flex-col gap-5">
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Amenities">Amenities</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Galllery</a></li>
+            </ul>
+          </nav>
+          <div>
+            <button class="bg-[#AA77CC86] px-5 py-2 rounded-xl font-semibold">
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section id="Home" class="h-screen">
+      <!-- background image -->
+      <div class="absolute inset-0">
+        <img
+          class="w-full h-full object-cover"
+          src="./images/hero-bg.jpg"
+          alt=""
+        />
+        <!-- overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+        <!-- content -->
+        <div class="absolute inset-0">
+          <div
+            class="flex flex-col justify-center items-center gap-5 my-[250px] text-white"
+          >
+            <div class="flex flex-col items-center">
+              <h2
+                class="lg:text-7xl text-4xl font-semibold text-center font-[Cormorant Garamond] w-full"
+              >
+                Experience Tranquil Luxury
+              </h2>
+              <p class="text-xl w-[80%] text-center mt-2">
+                Discover a serene retreat where modern elegance meets
+                unparalleled comfort.
+              </p>
+            </div>
+            <div
+              class="border border-gray-500 rounded-lg bg-black/60 p-4 lg:w-[60%] w-[90%] mt-3"
+            >
+              <div class="grid lg:grid-cols-4 grid-cols-1 items-center gap-2">
+                <!-- check in -->
+                <div class="flex items-center gap-5">
+                  <div class="flex items-center gap-2">
+                    <img src="./images/pixel_calender.svg" alt="" />
+                    <p>Check-in</p>
+                  </div>
+                  <!-- <div>|</div> -->
+                </div>
+                <!-- check out -->
+                <div class="flex items-center gap-5">
+                  <div class="flex items-center gap-2">
+                    <img src="./images/pixel_calender.svg" alt="" />
+                    <p>Check-in</p>
+                  </div>
+                  <!-- <div>|</div> -->
+                </div>
+                <!-- Guests -->
+                <div class="flex items-center gap-5">
+                  <div class="flex items-center gap-2">
+                    <img src="./images/pixel_calender.svg" alt="" />
+                    <p>Check-in</p>
+                  </div>
+                  <!-- <div>|</div> -->
+                </div>
+                <!-- check availability -->
+                <div>
+                  <button
+                    class="bg-[#AA77CC86] px-5 py-2 rounded-xl font-semibold"
+                  >
+                    Check Availability
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- rooms & suites -->
+    <section class="text-black">
+      <div class="max-w-7xl mx-auto px-[30px] py-[30px]">
+        <div class="flex flex-col items-center gap-3 mb-5">
+          <h2 class="font-[Cormorant Garamond] text-4xl">Our Rooms & Suites</h2>
+          <p class="text-lg text-center">
+            Designed for comfort, our rooms are the perfect blend of style and
+            substance.
+          </p>
+        </div>
+        <!-- images -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 items-center gap-3">
+          <!-- deluxe king -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/deluxe-img.svg" alt="" />
+            <h2 class="text-xl font-normal">Deluxe King Room</h2>
+            <p class="text-base">
+              A spacious room with a king-sized bed, city views and a luxurious
+              bathroom.
+            </p>
+            <div class="flex items-center gap-2">
+              <p class="text-lg">View Details</p>
+              <img src="./images/right-arrow.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- ocean view -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/ocean-view-img.svg" alt="" />
+            <h2 class="text-xl font-normal">Ocean View Suites</h2>
+            <p class="text-base">
+              Unwind with breathtaking ocean view from your private balcony.
+            </p>
+            <div class="flex items-center gap-2">
+              <p class="text-lg">View Details</p>
+              <img src="./images/right-arrow.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- family room -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/family-room-img.svg" alt="" />
+            <h2 class="text-xl font-normal">Family Room</h2>
+            <p class="text-base">
+              Perfect for families, offering extra space and comfort for
+              everyone.
+            </p>
+            <div class="flex items-center gap-2">
+              <p class="text-lg">View Details</p>
+              <img src="./images/right-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities -->
+    <section id="Amenities" class="text-black">
+      <div class="max-w-7xl mx-auto px-[30px] py-[30px]">
+        <div class="flex flex-col items-center gap-3 mb-5">
+          <h2 class="font-[Cormorant Garamond] text-4xl">
+            World-Class Amenities
+          </h2>
+          <p class="text-lg text-center">
+            Enhance your story with our premium facilities and services.
+          </p>
+        </div>
+
+        <!-- images -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 items-center gap-4">
+          <!-- infinity pool -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/infinity-pool.svg" alt="" />
+            <button
+              class="bg-[#5E4F7D] text-white px-5 py-2 rounded-xl font-semibold"
+            >
+              Infinity Pool
+            </button>
+          </div>
+          <!-- Wellness Spa -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/wellness-spa.svg" alt="" />
+            <button
+              class="bg-[#5E4F7D] text-white px-5 py-2 rounded-xl font-semibold"
+            >
+              Wellness Spa
+            </button>
+          </div>
+          <!-- Fitness Center -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/fitness-center.svg" alt="" />
+            <button
+              class="bg-[#5E4F7D] text-white px-5 py-2 rounded-xl font-semibold"
+            >
+              Fitness Center
+            </button>
+          </div>
+          <!-- Gourmet Dining -->
+          <div class="flex flex-col gap-2">
+            <img src="./images/gourment-dinning.svg" alt="" />
+            <button
+              class="bg-[#5E4F7D] text-white px-5 py-2 rounded-xl font-semibold"
+            >
+              Gourmet Dining
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Aura Virtually -->
+    <section class="text-black">
+      <div class="max-w-7xl mx-auto px-[30px] py-[30px]">
+        <div class="flex flex-col items-center gap-3 mb-3">
+          <h2 class="font-[Cormorant Garamond] text-center text-4xl">
+            Explore Aura Virtually
+          </h2>
+          <p class="text-lg text-center">
+            Take a walkthrough of our property from the comfort of your home
+          </p>
+        </div>
+        <!-- video -->
+        <div></div>
+      </div>
+    </section>
+
+    <!-- our story -->
+    <section class="text-black">
+      <div class="max-w-7xl mx-auto px-[30px] py-[30px]">
+        <div class="grid lg:grid-cols-2 items-center gap-6">
+          <div class="">
+            <img class="" src="./images/our-story.svg" alt="" />
+          </div>
+          <!-- text -->
+          <div class="flex flex-col gap-5">
+            <h2 class="font-[Cormorant Garamond] text-4xl">Our Story</h2>
+            <p class="text-base">
+              Aura Hotel was born from a vision to create a sanctuary of peace
+              and luxury. Nestled in a breathtaking location, we offer a unique
+              blend of contemporary design and timeless elegance. Our commitment
+              is to provide an unforgettable experience for every guest,
+              focusing on personalized service and attention to detail.
+            </p>
+            <p class="text-base">
+              From our meticulously designed rooms to our world-class amenities,
+              every aspect of Aura Hotel is crafted to ensure your utmost
+              comfort and relaxation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moments at Aura -->
+    <section class="text-black">
+      <div class="max-w-7xl mx-auto px-[30px] py-[30px]">
+        <div class="flex flex-col items-center gap-3 mb-3">
+          <h2 class="font-[Cormorant Garamond] text-center text-4xl">
+            Moments at Aura
+          </h2>
+          <p class="text-lg text-center">
+            A glimpse into the serene and beautiful world of our hotel.
+          </p>
+        </div>
+        <!-- images -->
+        <div class="flex items-center gap-3">
+          <div>
+            <img src="./images/pool-side.svg" alt="" />
+          </div>
+          <!-- grid images -->
+          <div class="grid grid-cols-2 items-center gap-2">
+            <div>
+              <img src="./images/first-grid.svg" alt="" />
+            </div>
+            <div>
+              <img src="./images/white-plate.svg" alt="" />
+            </div>
+            <div>
+              <img src="./images/third-grid.svg" alt="" />
+            </div>
+            <div>
+              <img src="./images/last-grid.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-white w-full">
+      <div class="max-w-7xl mx-auto px-[30px] py-[50px]">
+        <!-- grid div -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+          <!-- grid one -->
+          <div class="flex flex-col gap-2">
+            <div class="leading-loose">
+              <h2 class="mb-2 font-[Cormorant Garamond]">AURA</h2>
+              <p>123 Luxury Lane, Apapa, Lagos State</p>
+              <p>Contact @aurahotel.com</p>
+            </div>
+            <!-- socila-medial icon -->
+            <div class="flex items-center gap-2 mt-2">
+              <img src="./images/instagram-icon.svg" alt="instagram-icon" />
+              <img src="./images/facebook-icon.svg" alt="facebook-icon" />
+              <img src="./images/twitter-icon.svg" alt="twitter-icon" />
+            </div>
+          </div>
+
+          <!-- grid two (Quick Links) -->
+          <div>
+            <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+            <ul class="leading-loose">
+              <li>Rooms</li>
+              <li>Amenities</li>
+              <li>Explore</li>
+              <li>About Us</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <!-- grid three (Legal) -->
+          <div>
+            <h2 class="text-lg font-semibold mb-2">Legal</h2>
+            <ul class="leading-loose">
+              <li>Private Policy</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+
+          <!-- grid four (Newsletter) -->
+          <div>
+            <h2 class="text-lg font-semibold mb-2">Newsletter</h2>
+            <p>Sign up for special offers.</p>
+            <div>
+              <input
+                class="p-2 text-lg border-[#727272] border rounded-lg my-3 w-full outline-none"
+                type="email"
+                name=""
+                id=""
+                placeholder="Your Email"
+              />
+              <div>
+                <button class="py-2 w-full bg-[#5E4F7D] text-white rounded-lg">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- copyrights -->
+    <section class="w-full">
+      <div class="py-6 text-lg">
+        <p class="text-center">
+          Copywrights, 2025 Aura Hotel. All Rights Reserved
+        </p>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
